@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Image Change</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- <div class="header">
+
+        </div> -->
+        <div class="container">
+          <h1 class = "product-details">Product Details</h1>
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container" id="imageContainer">
+                        <img src="images/w1.png" alt="watch" id="zoomImage">
+                    </div>
+                    <div class="hover-container">
+                        <div id="blackWatch"><img src="images/w1.png"></div>
+                        <div id="greenWatch"><img src="images/w2.png"></div>
+                        <div id="pinkWatch"><img src="images/w3.png"></div>
+                        <div id="blueWatch"><img src="images/w4.png"></div>
+                        <div id="whiteWatch"><img src="images/w5.png"></div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-name"> Analog Watch - For Men</span>
+                    <span class="product-price">&#8377 1999</span>
+                    <div class="product-rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star-half-alt"></i></span>
+                        <span>(350 ratings)</span>
+                    </div>
+                    <div class="zoom-buttons">
+                      <button id="zoomInBtn" onclick="zoomIn()"><i class="fas fa-search-plus"> Zoom In</i></button>
+                      <button id="zoomOutBtn" onclick="zoomOut()"><i class="fas fa-search-minus"> Zoom Out</i></button>
+                    </div>
+                    <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi
+                        ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis
+                        quidem exercitationem voluptas.</p>
+                    <div class="btn-groups">
+                        <button type="button" id="addToCart" class="add-cart-btn" ><i class="fas fa-shopping-cart"></i>add to
+                            cart</button>
+                        <button type="button" class="buy-now-btn" id="modalButton" data-toggle="modal" data-target="#myModal"><i class="fas fa-wallet"></i>Go to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cart</h4>
+        </div>
+        <div class="modal-body">
+          <table id="table" style="width:100%">
+            <!-- <tr>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr> -->
+
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
